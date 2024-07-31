@@ -1,7 +1,22 @@
 # Revature_Project_2
 
+order_id
+
 product_category:
 --> price linked to product_id, product_name, varies by website within a range
+--> qty limit at 5
+
+<!-- Matt JSON -->
+
+{
+product_id: num
+category: toys
+name: chew toy
+price_range: [10, 15]  
+}
+
+<!-- Tobi -->
+
 toys  
  ropes
 chew toys
@@ -37,13 +52,22 @@ chewy.com (meds, food, toys)
 onpdg.com (beds, crates, leashes)
 
 <!-- One Function -->
+<!-- Matt -->
 
 50 Customers (customer_id/customer_name/country/city)
 
-Random
+<!-- Miguel  -->
+<!-- Pulling everything together to create the csv file -->
+
+<!-- Matt -->
+
 payment_type
+
+<!-- Matt -->
+
 datetime (within a range)
 
+    <!-- Matt -->
     payment_tx_id
     payment_tx_success (mostly positive, rarely negative)
     failure_reason (list of possible reasons, only if the above is negative.)
