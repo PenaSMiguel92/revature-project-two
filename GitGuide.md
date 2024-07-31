@@ -18,4 +18,4 @@ Now add, commit and push:
 
 git add .
 git commit -m "added new branch"
-git push origin {branch name}
+git push -u origin {branch name}
