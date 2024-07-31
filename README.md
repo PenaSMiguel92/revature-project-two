@@ -1,5 +1,7 @@
 # Revature_Project_2
 
+<!-- Increment -->
+
 order_id
 
 product_category:
@@ -61,13 +63,10 @@ onpdg.com (beds, crates, leashes)
 
 <!-- Matt -->
 
-payment_type
-
-<!-- Matt -->
-
 datetime (within a range)
 
     <!-- Matt -->
+    payment_type
     payment_tx_id
     payment_tx_success (mostly positive, rarely negative)
     failure_reason (list of possible reasons, only if the above is negative.)
