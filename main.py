@@ -41,4 +41,7 @@ def main():
     product = product_purchase_details()
     
     
+    # Combine the Return Types to Generate the CSV
+    # Include the error function
+    #Testing branching.
     return
