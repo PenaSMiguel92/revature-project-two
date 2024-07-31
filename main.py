@@ -1,6 +1,6 @@
 # Import Functions
 from utils.data_generators  import customer_details, transaction_details 
-
+import csv
 
 def main():
 
@@ -28,4 +28,7 @@ def main():
     transaction = transaction_details()
     
     
+    # Combine the Return Types to Generate the CSV
+    # Include the error function
+    #Testing branching.
     return
