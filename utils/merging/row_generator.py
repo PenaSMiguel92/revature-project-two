@@ -8,7 +8,6 @@ def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict
         ;param; cur_row: int, customer: dict, transaction: dict, product: dict, **kwargs
         ;returns; str <- string combining columns
     """
-    result_list = []
     row_list = []
     row_list.append(str(cur_row))
     row_list.append(customer.get('id'))
