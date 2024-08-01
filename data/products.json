@@ -1,0 +1,116 @@
+[
+    {
+        "product_id": "1",
+        "category": "toy",
+        "name": "chew toy",
+        "price_range": [7, 15]
+    },
+    {
+        "product_id": "2",
+        "category": "toy",
+        "name": "rope",
+        "price_range": [10, 15]
+    },
+    {
+        "product_id": "3",
+        "category": "toy",
+        "name": "stuffed animal",
+        "price_range": [10, 21]
+    },
+    {
+        "product_id": "4",
+        "category": "food",
+        "name": "small dog",
+        "price_range": [20, 40]
+    },
+    {
+        "product_id": "5",
+        "category": "food",
+        "name": "medium dog",
+        "price_range": [25, 50]
+    },
+    {
+        "product_id": "6",
+        "category": "food",
+        "name": "large dog",
+        "price_range": [30, 60]
+    },
+    {
+        "product_id": "7",
+        "category": "meds",
+        "name": "antibiotics",
+        "price_range": [15, 50]
+    },
+    {
+        "product_id": "8",
+        "category": "meds",
+        "name": "diet pills",
+        "price_range": [30, 60]
+    },
+    {
+        "product_id": "9",
+        "category": "meds",
+        "name": "anti viral",
+        "price_range": [30, 60]
+    },
+    {
+        "product_id": "10",
+        "category": "meds",
+        "name": "vaccines",
+        "price_range": [30, 60]
+    },
+    {
+        "product_id": "14",
+        "category": "leash",
+        "name": "short leash",
+        "price_range": [8, 25]
+    },
+    {
+        "product_id": "15",
+        "category": "leash",
+        "name": "medium leash",
+        "price_range": [12, 30]
+    },
+    {
+        "product_id": "16",
+        "category": "leash",
+        "name": "long leash",
+        "price_range": [15, 35]
+    },
+    {
+        "product_id": "4",
+        "category": "crates",
+        "name": "small crate",
+        "price_range": [50, 125]
+    },
+    {
+        "product_id": "5",
+        "category": "crates",
+        "name": "medium crate",
+        "price_range": [70, 135]
+    },
+    {
+        "product_id": "6",
+        "category": "crates",
+        "name": "large crate",
+        "price_range": [85, 150]
+    },
+    {
+        "product_id": "4",
+        "category": "bed",
+        "name": "small bed",
+        "price_range": [40, 60]
+    },
+    {
+        "product_id": "5",
+        "category": "bed",
+        "name": "medium bed",
+        "price_range": [50, 75]
+    },
+    {
+        "product_id": "6",
+        "category": "bed",
+        "name": "large bed",
+        "price_range": [60, 85]
+    }
+]

@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "full_name": "Edward Said",
+        "city": "Carson City",
+        "country": "United States"
+    },
+    {
+        "id": 2,
+        "full_name": "Judith Butler",
+        "city": "Toronto",
+        "country": "Canada"
+    },
+    {
+        "id": 3,
+        "full_name": "Isaac Newton",
+        "city": "Caldwell",
+        "country": "United States"
+    },
+    {
+        "id": 4,
+        "full_name": "Marie Curie",
+        "city": "Oaxaca",
+        "country": "Mexico"
+    },
+    {
+        "id": 5,
+        "full_name": "Charles Darwin",
+        "city": "Pocatello",
+        "country": "United States"
+    },
+    {
+        "id": 6,
+        "full_name": "Jean-Paul Sartre",
+        "city": "Flagstaff",
+        "country": "United States"
+    },
+    {
+        "id": 7,
+        "full_name": "Plato",
+        "city": "Tijuana",
+        "country": "Mexico"
+    },
+    {
+        "id": 8,
+        "full_name": "Elizabeth Warren",
+        "city": "Los Angeles",
+        "country": "United States"
+    },
+    {
+        "id": 9,
+        "full_name": "Aristotle",
+        "city": "Twin Falls",
+        "country": "United States"
+    },
+    {
+        "id": 10,
+        "full_name": "Isaac Newton",
+        "city": "Flagstaff",
+        "country": "United States"
+    },
+    {
+        "id": 11,
+        "full_name": "Charles Darwin",
+        "city": "Sedona",
+        "country": "United States"
+    },
+    {
+        "id": 12,
+        "full_name": "Harry Wallace",
+        "city": "San Diego",
+        "country": "United States"
+    },
+    {
+        "id": 13,
+        "full_name": "Sigmund Freud",
+        "city": "Phoenix",
+        "country": "United States"
+    },
+    {
+        "id": 14,
+        "full_name": "Emma Goldman",
+        "city": "Puerto Vallarta",
+        "country": "Mexico"
+    },
+    {
+        "id": 15,
+        "full_name": "Socrates",
+        "city": "Las Vegas",
+        "country": "United States"
+    },
+    {
+        "id": 16,
+        "full_name": "Simone de Beauvoir",
+        "city": "Pocatello",
+        "country": "United States"
+    },
+    {
+        "id": 17,
+        "full_name": "Noam Chomsky",
+        "city": "San Bernadino",
+        "country": "United States"
+    },
+    {
+        "id": 18,
+        "full_name": "George H.W. Bush",
+        "city": "Tulsa",
+        "country": "United States"
+    },
+    {
+        "id": 19,
+        "full_name": "Louis Pasteur",
+        "city": "Las Vegas",
+        "country": "United States"
+    },
+    {
+        "id": 20,
+        "full_name": "Rosa Luxemburg",
+        "city": "Carson City",
+        "country": "United States"
+    },
+    {
+        "id": 21,
+        "full_name": "Simone de Beauvoir",
+        "city": "Winston-Salem",
+        "country": "United States"
+    },
+    {
+        "id": 22,
+        "full_name": "Noam Chomsky",
+        "city": "Moscow",
+        "country": "United States"
+    },
+    {
+        "id": 23,
+        "full_name": "Slavoj Zizek",
+        "city": "Tulsa",
+        "country": "United States"
+    },
+    {
+        "id": 24,
+        "full_name": "Jean-Paul Sartre",
+        "city": "Puerto Vallarta",
+        "country": "Mexico"
+    },
+    {
+        "id": 25,
+        "full_name": "Bill Clinton",
+        "city": "Flagstaff",
+        "country": "United States"
+    },
+    {
+        "id": 26,
+        "full_name": "Marie Curie",
+        "city": "Seattle",
+        "country": "United States"
+    },
+    {
+        "id": 27,
+        "full_name": "Bill Clinton",
+        "city": "Scottsdale",
+        "country": "United States"
+    },
+    {
+        "id": 28,
+        "full_name": "Henry Kissinger",
+        "city": "Flagstaff",
+        "country": "United States"
+    },
+    {
+        "id": 29,
+        "full_name": "Simone de Beauvoir",
+        "city": "San Antonio",
+        "country": "United States"
+    },
+    {
+        "id": 30,
+        "full_name": "Emma Goldman",
+        "city": "Portland",
+        "country": "United States"
+    },
+    {
+        "id": 31,
+        "full_name": "Henry Kissinger",
+        "city": "San Francisco",
+        "country": "United States"
+    },
+    {
+        "id": 32,
+        "full_name": "Hannah Arendt",
+        "city": "Virginia Beach",
+        "country": "United States"
+    },
+    {
+        "id": 33,
+        "full_name": "Noam Chomsky",
+        "city": "Tampa",
+        "country": "United States"
+    },
+    {
+        "id": 34,
+        "full_name": "Slavoj Zizek",
+        "city": "Los Angeles",
+        "country": "United States"
+    },
+    {
+        "id": 35,
+        "full_name": "George W. Bush",
+        "city": "Phoenix",
+        "country": "United States"
+    },
+    {
+        "id": 36,
+        "full_name": "Simone de Beauvoir",
+        "city": "San Antonio",
+        "country": "United States"
+    },
+    {
+        "id": 37,
+        "full_name": "Slavoj Zizek",
+        "city": "Toronto",
+        "country": "Canada"
+    },
+    {
+        "id": 38,
+        "full_name": "Plato",
+        "city": "Pocatello",
+        "country": "United States"
+    },
+    {
+        "id": 39,
+        "full_name": "Charles Darwin",
+        "city": "Santa Ana",
+        "country": "United States"
+    },
+    {
+        "id": 40,
+        "full_name": "Gilles Deleuze",
+        "city": "Ensenada",
+        "country": "Mexico"
+    },
+    {
+        "id": 41,
+        "full_name": "Bernie Sanders",
+        "city": "Los Angeles",
+        "country": "United States"
+    },
+    {
+        "id": 42,
+        "full_name": "Gilles Deleuze",
+        "city": "St. George",
+        "country": "United States"
+    },
+    {
+        "id": 43,
+        "full_name": "Henry Kissinger",
+        "city": "Portland",
+        "country": "United States"
+    },
+    {
+        "id": 44,
+        "full_name": "Gilles Deleuze",
+        "city": "Henderson",
+        "country": "United States"
+    },
+    {
+        "id": 45,
+        "full_name": "Greta Thunberg",
+        "city": "Guadalajara",
+        "country": "Mexico"
+    },
+    {
+        "id": 46,
+        "full_name": "Greta Thunberg",
+        "city": "Tampa",
+        "country": "United States"
+    },
+    {
+        "id": 47,
+        "full_name": "Angela Davis",
+        "city": "Vancouver",
+        "country": "Canada"
+    },
+    {
+        "id": 48,
+        "full_name": "Henry Kissinger",
+        "city": "Guadalajara",
+        "country": "Mexico"
+    },
+    {
+        "id": 49,
+        "full_name": "Ronald Reagan",
+        "city": "Ogden",
+        "country": "United States"
+    },
+    {
+        "id": 50,
+        "full_name": "Harry Wallace",
+        "city": "St. George",
+        "country": "United States"
+    }
+]

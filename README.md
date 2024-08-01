@@ -61,11 +61,8 @@ onpdg.com (beds, crates, leashes)
 <!-- Miguel  -->
 <!-- Pulling everything together to create the csv file -->
 
-<!-- Matt -->
-
-datetime (within a range)
-
     <!-- Matt -->
+    datetime (within a range)
     payment_type
     payment_tx_id
     payment_tx_success (mostly positive, rarely negative)
