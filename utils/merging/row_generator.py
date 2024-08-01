@@ -1,4 +1,6 @@
-def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict, **kwargs) -> list[list[str]]:
+
+
+def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict, **kwargs) -> list[str]:
     """
         This method takes in dictionaries and generates a row to be written to csv file.
         
@@ -6,7 +8,6 @@ def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict
         ;param; cur_row: int, customer: dict, transaction: dict, product: dict, **kwargs
         ;returns; str <- string combining columns
     """
-    result_list = []
     row_list = []
     row_list.append(str(cur_row))
     row_list.append(customer.get('id'))
@@ -25,8 +26,5 @@ def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict
     row_list.append(transaction.get('payment_tx_success'))
     row_list.append(transaction.get('failure_reason'))
     result_list.append(row_list)
-
-
-
     return result_list
 
