@@ -1,6 +1,6 @@
 # Import Functions
 from utils.data_generators  import customer_details, transaction_details 
-import csv
+
 
 def main():
 

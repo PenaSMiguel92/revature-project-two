@@ -19,3 +19,15 @@ Now add, commit and push:
 git add .
 git commit -m "added new branch"
 git push -u origin {branch name}
+
+To pull changes:
+
+git checkout main
+
+git pull
+
+To update your branch with changes.
+
+git checkout {branch}
+
+git rebase main
