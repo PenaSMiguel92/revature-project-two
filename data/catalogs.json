@@ -1,0 +1,352 @@
+{
+    "petsmart.com": [
+        {
+            "product_id": "1",
+            "category": "toy",
+            "name": "chew toy",
+            "price": 10.25
+        },
+        {
+            "product_id": "2",
+            "category": "toy",
+            "name": "rope",
+            "price": 12.6
+        },
+        {
+            "product_id": "3",
+            "category": "toy",
+            "name": "stuffed animal",
+            "price": 12.01
+        },
+        {
+            "product_id": "4",
+            "category": "food",
+            "name": "small dog",
+            "price": 22.23
+        },
+        {
+            "product_id": "5",
+            "category": "food",
+            "name": "medium dog",
+            "price": 46.81
+        },
+        {
+            "product_id": "6",
+            "category": "food",
+            "name": "large dog",
+            "price": 30.93
+        },
+        {
+            "product_id": "7",
+            "category": "meds",
+            "name": "antibiotics",
+            "price": 21.85
+        },
+        {
+            "product_id": "8",
+            "category": "meds",
+            "name": "diet pills",
+            "price": 58.49
+        },
+        {
+            "product_id": "9",
+            "category": "meds",
+            "name": "anti viral",
+            "price": 43.91
+        },
+        {
+            "product_id": "10",
+            "category": "meds",
+            "name": "vaccines",
+            "price": 48.81
+        },
+        {
+            "product_id": "14",
+            "category": "leash",
+            "name": "short leash",
+            "price": 12.9
+        },
+        {
+            "product_id": "15",
+            "category": "leash",
+            "name": "medium leash",
+            "price": 27.27
+        },
+        {
+            "product_id": "16",
+            "category": "leash",
+            "name": "long leash",
+            "price": 19.42
+        },
+        {
+            "product_id": "4",
+            "category": "crates",
+            "name": "small crate",
+            "price": 92.76
+        },
+        {
+            "product_id": "5",
+            "category": "crates",
+            "name": "medium crate",
+            "price": 76.5
+        },
+        {
+            "product_id": "6",
+            "category": "crates",
+            "name": "large crate",
+            "price": 136.39
+        },
+        {
+            "product_id": "4",
+            "category": "bed",
+            "name": "small bed",
+            "price": 58.3
+        },
+        {
+            "product_id": "5",
+            "category": "bed",
+            "name": "medium bed",
+            "price": 51.93
+        },
+        {
+            "product_id": "6",
+            "category": "bed",
+            "name": "large bed",
+            "price": 82.12
+        }
+    ],
+    "amazon.com": [
+        {
+            "product_id": "1",
+            "category": "toy",
+            "name": "chew toy",
+            "price": 10.25
+        },
+        {
+            "product_id": "2",
+            "category": "toy",
+            "name": "rope",
+            "price": 12.6
+        },
+        {
+            "product_id": "3",
+            "category": "toy",
+            "name": "stuffed animal",
+            "price": 12.01
+        },
+        {
+            "product_id": "4",
+            "category": "food",
+            "name": "small dog",
+            "price": 22.23
+        },
+        {
+            "product_id": "5",
+            "category": "food",
+            "name": "medium dog",
+            "price": 46.81
+        },
+        {
+            "product_id": "6",
+            "category": "food",
+            "name": "large dog",
+            "price": 30.93
+        },
+        {
+            "product_id": "7",
+            "category": "meds",
+            "name": "antibiotics",
+            "price": 21.85
+        },
+        {
+            "product_id": "8",
+            "category": "meds",
+            "name": "diet pills",
+            "price": 58.49
+        },
+        {
+            "product_id": "9",
+            "category": "meds",
+            "name": "anti viral",
+            "price": 43.91
+        },
+        {
+            "product_id": "10",
+            "category": "meds",
+            "name": "vaccines",
+            "price": 48.81
+        },
+        {
+            "product_id": "14",
+            "category": "leash",
+            "name": "short leash",
+            "price": 12.9
+        },
+        {
+            "product_id": "15",
+            "category": "leash",
+            "name": "medium leash",
+            "price": 27.27
+        },
+        {
+            "product_id": "16",
+            "category": "leash",
+            "name": "long leash",
+            "price": 19.42
+        },
+        {
+            "product_id": "4",
+            "category": "crates",
+            "name": "small crate",
+            "price": 92.76
+        },
+        {
+            "product_id": "5",
+            "category": "crates",
+            "name": "medium crate",
+            "price": 76.5
+        },
+        {
+            "product_id": "6",
+            "category": "crates",
+            "name": "large crate",
+            "price": 136.39
+        },
+        {
+            "product_id": "4",
+            "category": "bed",
+            "name": "small bed",
+            "price": 58.3
+        },
+        {
+            "product_id": "5",
+            "category": "bed",
+            "name": "medium bed",
+            "price": 51.93
+        },
+        {
+            "product_id": "6",
+            "category": "bed",
+            "name": "large bed",
+            "price": 82.12
+        }
+    ],
+    "chewy.com": [
+        {
+            "product_id": "1",
+            "category": "toy",
+            "name": "chew toy",
+            "price": 10.25
+        },
+        {
+            "product_id": "2",
+            "category": "toy",
+            "name": "rope",
+            "price": 12.6
+        },
+        {
+            "product_id": "3",
+            "category": "toy",
+            "name": "stuffed animal",
+            "price": 12.01
+        },
+        {
+            "product_id": "4",
+            "category": "food",
+            "name": "small dog",
+            "price": 22.23
+        },
+        {
+            "product_id": "5",
+            "category": "food",
+            "name": "medium dog",
+            "price": 46.81
+        },
+        {
+            "product_id": "6",
+            "category": "food",
+            "name": "large dog",
+            "price": 30.93
+        },
+        {
+            "product_id": "7",
+            "category": "meds",
+            "name": "antibiotics",
+            "price": 21.85
+        },
+        {
+            "product_id": "8",
+            "category": "meds",
+            "name": "diet pills",
+            "price": 58.49
+        },
+        {
+            "product_id": "9",
+            "category": "meds",
+            "name": "anti viral",
+            "price": 43.91
+        },
+        {
+            "product_id": "10",
+            "category": "meds",
+            "name": "vaccines",
+            "price": 48.81
+        }
+    ],
+    "onpdg.com": [
+        {
+            "product_id": "14",
+            "category": "leash",
+            "name": "short leash",
+            "price": 12.9
+        },
+        {
+            "product_id": "15",
+            "category": "leash",
+            "name": "medium leash",
+            "price": 27.27
+        },
+        {
+            "product_id": "16",
+            "category": "leash",
+            "name": "long leash",
+            "price": 19.42
+        },
+        {
+            "product_id": "4",
+            "category": "crates",
+            "name": "small crate",
+            "price": 92.76
+        },
+        {
+            "product_id": "5",
+            "category": "crates",
+            "name": "medium crate",
+            "price": 76.5
+        },
+        {
+            "product_id": "6",
+            "category": "crates",
+            "name": "large crate",
+            "price": 136.39
+        },
+        {
+            "product_id": "4",
+            "category": "bed",
+            "name": "small bed",
+            "price": 58.3
+        },
+        {
+            "product_id": "5",
+            "category": "bed",
+            "name": "medium bed",
+            "price": 51.93
+        },
+        {
+            "product_id": "6",
+            "category": "bed",
+            "name": "large bed",
+            "price": 82.12
+        }
+    ]
+}

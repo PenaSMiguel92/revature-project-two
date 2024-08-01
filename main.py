@@ -1,5 +1,5 @@
 # Import Functions
-from utils.data_generators  import customer_details, transaction_details 
+from utils.data_generators  import customer_details, transaction_details, product_purchase_details
 
 
 def main():
@@ -26,6 +26,19 @@ def main():
     }
     """
     transaction = transaction_details()
+    
+    # Generate a product
+    """
+    Returns
+    {   'product_id': 8,
+        'category': 'meds',
+        'name': 'diet pills',
+        'price': 58.49,
+        'website': 'chewy.com'
+        'quantity': 2
+    }
+    """
+    product = product_purchase_details()
     
     
     return
