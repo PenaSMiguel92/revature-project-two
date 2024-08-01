@@ -12,7 +12,8 @@ def product_purchase_details():
     catalog = catalogs[key]
     product:dict = random.choice(catalog)
     product['website'] = key
-    product['quantity'] = secrets.randbelow(16)
+    product['quantity'] = str(secrets.randbelow(16))
+    product['price'] = str(product['price'])
     return product
 
 print(product_purchase_details())
