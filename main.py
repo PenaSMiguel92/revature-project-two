@@ -43,7 +43,7 @@ def main():
         """
         product = product_purchase_details.product_purchase_details()
         
-        row_to_write = row_generator.row_generator(row_id, customer, transaction, product, errorize=False)
+        row_to_write = row_generator.row_generator(row_id, customer, transaction, product, errorize=True)
         rows_to_write.append(row_to_write)
     
     save_csvfile.save_data(rows_to_write)

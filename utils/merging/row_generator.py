@@ -30,7 +30,7 @@ def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict
     row_list.append(transaction.get('failure_reason'))
 
     # Introduce an error in 1% of the rows
-    if kwargs.get('errorize', False) and random.random() < 0.01:
+    if kwargs.get('errorize', True) and random.random() < 0.01:
         # Randomly select a column to introduce the error
         error_column = random.randint(1, len(row_list) - 1)
         # Randomly select an error message from the error_list
