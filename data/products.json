@@ -78,37 +78,37 @@
         "price_range": [15, 35]
     },
     {
-        "product_id": "4",
+        "product_id": "24",
         "category": "crates",
         "name": "small crate",
         "price_range": [50, 125]
     },
     {
-        "product_id": "5",
+        "product_id": "25",
         "category": "crates",
         "name": "medium crate",
         "price_range": [70, 135]
     },
     {
-        "product_id": "6",
+        "product_id": "26",
         "category": "crates",
         "name": "large crate",
         "price_range": [85, 150]
     },
     {
-        "product_id": "4",
+        "product_id": "34",
         "category": "bed",
         "name": "small bed",
         "price_range": [40, 60]
     },
     {
-        "product_id": "5",
+        "product_id": "35",
         "category": "bed",
         "name": "medium bed",
         "price_range": [50, 75]
     },
     {
-        "product_id": "6",
+        "product_id": "36",
         "category": "bed",
         "name": "large bed",
         "price_range": [60, 85]

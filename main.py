@@ -7,7 +7,8 @@ def main():
     # Generate a customer
     """ 
     Returns 
-    {   'id': 1, 
+    {   
+        'id': 1, 
         'full_name': 'Thomas Edison', 
         'city': 'San Francisco', 
         'country': 'United States'
@@ -18,7 +19,8 @@ def main():
     # Generate a transaction
     """
     Returns
-    {   'datetime': formatted_datetime,
+    {   
+        'datetime': formatted_datetime,
         'payment_type': payment_type,
         'payment_tx_id': payment_tx_id,
         'payment_tx_success': payment_tx_success,

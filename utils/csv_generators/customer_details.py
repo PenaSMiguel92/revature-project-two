@@ -14,5 +14,3 @@ def customer_details():
         "city": user["city"],
         "country": user["country"]
     }
-
-print(customer_details())
