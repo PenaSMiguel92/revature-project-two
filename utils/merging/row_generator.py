@@ -1,5 +1,3 @@
-
-
 def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict, **kwargs) -> list[list[str]]:
     """
         This method takes in dictionaries and generates a row to be written to csv file.
@@ -27,5 +25,8 @@ def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict
     row_list.append(transaction.get('payment_tx_success'))
     row_list.append(transaction.get('failure_reason'))
     result_list.append(row_list)
+
+
+
     return result_list
 
