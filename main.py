@@ -52,3 +52,6 @@ def main():
         #Testing branching.
     
     return
+
+if __name__ == '__main__':
+    main()
