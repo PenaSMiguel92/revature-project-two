@@ -32,8 +32,10 @@ def transaction_details():
     return {
         'datetime': formatted_datetime,
         'payment_type': payment_type,
-        'payment_tx_id': payment_tx_id,
+        'payment_tx_id': str(payment_tx_id),
         'payment_tx_success': payment_tx_success,
         'failure_reason': failure_reason
     }
+
+print(transaction_details())
 
