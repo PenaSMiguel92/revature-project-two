@@ -8,7 +8,7 @@ def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict
         ;param; cur_row: int, customer: dict, transaction: dict, product: dict, **kwargs
         ;returns; str <- string combining columns
     """
-    result_str = ''
+    result_list = []
     result_str += f'{cur_row},{customer.get('id'),{customer.get('full_name')}},{product.get('product_id')},'
     result_str += f'{product.get('name')},{product.get('category')},{transaction.get('payment_type')},'
     result_str += f'{product.get('quantity')},{product.get('price')},{transaction.get('datetime')},'
