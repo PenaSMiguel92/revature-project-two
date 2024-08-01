@@ -1,3 +1,6 @@
+import random
+
+error_list = ["46284y924", "BOOM!", "ERROR!", "corrupted data", "THisISN't a GoOd RoW", "Not This ONe", "This is a bad row", "This row is bad"]
 
 
 def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict, **kwargs) -> list[str]:
@@ -25,6 +28,15 @@ def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict
     row_list.append(transaction.get('payment_tx_id'))
     row_list.append(transaction.get('payment_tx_success'))
     row_list.append(transaction.get('failure_reason'))
-    result_list.append(row_list)
-    return result_list
+
+    # Introduce an error in 1% of the rows
+    if kwargs.get('errorize', False) and random.random() < 0.01:
+        # Randomly select a column to introduce the error
+        error_column = random.randint(1, len(row_list) - 1)
+        # Randomly select an error message from the error_list
+        error_message = random.choice(error_list)
+        row_list[error_column] = error_message
+
+
+    return row_list
 
