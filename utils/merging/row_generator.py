@@ -1,6 +1,6 @@
 
 
-def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict, **kwargs) -> str:
+def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict, **kwargs) -> list[list[str]]:
     """
         This method takes in dictionaries and generates a row to be written to csv file.
         
@@ -9,10 +9,23 @@ def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict
         ;returns; str <- string combining columns
     """
     result_list = []
-    result_str += f'{cur_row},{customer.get('id'),{customer.get('full_name')}},{product.get('product_id')},'
-    result_str += f'{product.get('name')},{product.get('category')},{transaction.get('payment_type')},'
-    result_str += f'{product.get('quantity')},{product.get('price')},{transaction.get('datetime')},'
-    result_str += f'{customer.get('country')},{customer.get('city')},{product.get('website')},'
-    result_str += f'{transaction.get('payment_tx_id'),{transaction.get('payment_tx_success')},{transaction.get('failure_reason')}}'
-    return result_str
+    row_list = []
+    row_list.append(str(cur_row))
+    row_list.append(customer.get('id'))
+    row_list.append(customer.get('full_name'))
+    row_list.append(product.get('product_id'))
+    row_list.append(product.get('name'))
+    row_list.append(product.get('category'))
+    row_list.append(transaction.get('payment_type'))
+    row_list.append(product.get('quantity'))
+    row_list.append(product.get('price'))
+    row_list.append(transaction.get('datetime'))
+    row_list.append(customer.get('country'))
+    row_list.append(customer.get('city'))
+    row_list.append(product.get('website'))
+    row_list.append(transaction.get('payment_tx_id'))
+    row_list.append(transaction.get('payment_tx_success'))
+    row_list.append(transaction.get('failure_reason'))
+    
+    return result_list
 
