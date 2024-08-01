@@ -26,6 +26,6 @@ def row_generator(cur_row: int, customer: dict, transaction: dict, product: dict
     row_list.append(transaction.get('payment_tx_id'))
     row_list.append(transaction.get('payment_tx_success'))
     row_list.append(transaction.get('failure_reason'))
-    
+    result_list.append(row_list)
     return result_list
 
