@@ -4,7 +4,7 @@ from utils.merging import row_generator, save_csvfile
 
 def main():
     rows_to_write = []
-    for row_id in range(12000):
+    for row_id in range(1, 12723):
         # Generate a customer
         """ 
         Returns 
