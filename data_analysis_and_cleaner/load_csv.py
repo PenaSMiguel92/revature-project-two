@@ -1,10 +1,4 @@
 from pathlib import Path
-from pyspark import SparkContext, SparkConf
-
-def load():
-    conf = SparkConf().setAppName("Load").setMaster("local")
-
-    
 import sparkContext
 def load():
     sc = sparkContext.sc
