@@ -31,9 +31,6 @@ print(columns_to_check)
 for column in columns_to_check[1:]:
     df = df.filter((col(column).isNotNull()) & (col(column) != "CORRUPTED"))
 
-# Apply the filter to the DataFrame
-df.count()
-
 
 def unique_values_count(df):
     unique_counts = {}
@@ -48,4 +45,6 @@ path = Path(__file__).parent / "test_data"
 
 # Output the Cleaned DataFrame as a CSV
 df.write.csv('file://'+str(path.absolute()), header=True)
-#df.write.csv("cleaned_data", header=True)
+
+# Write DataFrame to CSV with overwrite mode
+# df.write.mode("overwrite").csv('file://' + str(path.absolute()), header=True)
