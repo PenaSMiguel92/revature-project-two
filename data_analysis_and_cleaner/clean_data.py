@@ -45,4 +45,6 @@ path = Path(__file__).parent / "test_data"
 
 # Output the Cleaned DataFrame as a CSV
 df.write.csv('file://'+str(path.absolute()), header=True)
-#df.write.csv("cleaned_data", header=True)
+
+# Write DataFrame to CSV with overwrite mode
+# df.write.mode("overwrite").csv('file://' + str(path.absolute()), header=True)
