@@ -35,9 +35,6 @@ print(columns_to_check)
 for column in columns_to_check[1:]:
     df = df.filter((col(column).isNotNull()) & (col(column) != "CORRUPTED"))
 
-# Apply the filter to the DataFrame
-df.count()
-
 
 def unique_values_count(df):
     unique_counts = {}
