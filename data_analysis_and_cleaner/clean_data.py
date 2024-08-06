@@ -12,7 +12,7 @@ from pyspark.sql.functions import col, countDistinct
 #print(sc)
 
 # Have to change the path to the location of the data file
-df = load_csv.load()
+df = load_csv.load("data/data_team_3.csv")
 #spark.read.format("csv").option("header", "true").load("/Users/matthewbernhardt/Desktop/data_team_3.csv")
 
 
