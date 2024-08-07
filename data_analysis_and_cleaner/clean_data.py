@@ -1,6 +1,6 @@
 import load_csv
+import pandas
 from pathlib import Path
-from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, countDistinct
 
 # Load Data as a DataFrame
@@ -30,12 +30,11 @@ def unique_values_count(df):
         unique_counts[column] = unique_count
     return unique_counts
 
-print(unique_values_count(df))
 
-path = Path(__file__).parent / "test_data"
+path = Path(__file__).parent / "data/clean_data.csv"
 
 # Output the Cleaned DataFrame as a CSV
-df.write.csv('file://'+str(path.absolute()), header=True)
+df.toPandas().to_csv(str(path), index=False)
 
 # Write DataFrame to CSV with overwrite mode
 # df.write.mode("overwrite").csv('file://' + str(path.absolute()), header=True)
