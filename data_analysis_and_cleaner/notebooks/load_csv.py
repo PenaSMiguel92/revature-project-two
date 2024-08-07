@@ -6,7 +6,7 @@ def load(path: str):
     spark: SparkSession = sparkContext.spark
     #used in linux distro
     path = Path(__file__).parent / path
-    return spark.read.format("csv").option("header", "true").load('file://'+str(path.absolute())) 
+    return spark.read.format("csv").option("header", "true").option('inferSchema', 'true').load('file://'+str(path.absolute())) 
 
 def getContext():
     """
