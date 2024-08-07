@@ -3,7 +3,7 @@
 
 from pyspark.sql import SparkSession
 # Create a Spark session
-spark = SparkSession.builder \
+spark: SparkSession = SparkSession.builder \
     .appName("JupyterPySpark") \
     .getOrCreate()
 
