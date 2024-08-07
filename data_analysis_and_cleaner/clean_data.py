@@ -3,17 +3,8 @@ import pandas
 from pathlib import Path
 from pyspark.sql.functions import col, countDistinct
 
-
-# Access the Spark context from the Spark session
-#sc = spark.sparkContext
-
-# Verify the Spark session and context
-#print(spark)
-#print(sc)
-
-# Have to change the path to the location of the data file
+# Load Data as a DataFrame
 df = load_csv.load("data/data_team_3.csv")
-#spark.read.format("csv").option("header", "true").load("/Users/matthewbernhardt/Desktop/data_team_3.csv")
 
 
 # Filter out rows where 'payment_txn_success' is 'Y'
