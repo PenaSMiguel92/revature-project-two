@@ -22,6 +22,8 @@ print(columns_to_check)
 for column in columns_to_check[1:]:
     df = df.filter((col(column).isNotNull()) & (col(column) != "CORRUPTED"))
 
+# Drop rows where 'country' is 'country'
+df = df.filter(col("country") != 'country')
 
 def unique_values_count(df):
     unique_counts = {}
@@ -37,4 +39,4 @@ path = Path(__file__).parent / "data/clean_data.csv"
 df.toPandas().to_csv(str(path), index=False)
 
 # Write DataFrame to CSV with overwrite mode
-# df.write.mode("overwrite").csv('file://' + str(path.absolute()), header=True)
+df.write.mode("overwrite").csv('file://' + str(path.absolute()), header=True)
