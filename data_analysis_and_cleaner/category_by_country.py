@@ -18,7 +18,7 @@ df = df.groupBy("product_category", "country").agg(f.round(f.sum("qty"),0).cast(
 df = df.orderBy(["product_category","country"])
 
 # For python
-path = Path(__file__).parent / "data/category_by_country.csv"
+path = Path(__file__).parent / "data/oluwatobi/category_by_country.csv"
 df.toPandas().to_csv(str(path), index=False)
 
 """For jupyter

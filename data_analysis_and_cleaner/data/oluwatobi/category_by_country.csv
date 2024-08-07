@@ -35,7 +35,6 @@ accessories,Ukraine,366,31345.08
 accessories,United States,6811,976306.28
 accessories,Uzbekistan,126,10449.45
 accessories,Zimbabwe,313,21892.6
-accessories,country,118,12259.02
 appliances,Argentina,22,238.61
 appliances,Australia,35,7380.78
 appliances,Bhutan,17,10674.19
@@ -72,7 +71,6 @@ appliances,Ukraine,50,6691.37
 appliances,United States,1606,256390.65
 appliances,Uzbekistan,16,724.74
 appliances,Zimbabwe,65,10268.6
-appliances,country,37,1441.18
 bags & luggage,Argentina,10,237.0
 bags & luggage,Bhutan,10,69.5
 bags & luggage,Brazil,17,916.63
@@ -106,7 +104,6 @@ bags & luggage,Ukraine,18,456.66
 bags & luggage,United States,422,15515.53
 bags & luggage,Uzbekistan,12,773.88
 bags & luggage,Zimbabwe,21,720.99
-bags & luggage,country,1,23.7
 beauty & health,Argentina,17,112.47
 beauty & health,Australia,7,502.37
 beauty & health,Bhutan,8,155.55
@@ -174,7 +171,6 @@ car & motorbike,Ukraine,28,425.75
 car & motorbike,United States,415,9330.28
 car & motorbike,Uzbekistan,6,125.94
 car & motorbike,Zimbabwe,11,191.91
-car & motorbike,country,6,324.0
 grocery & gourmet foods,Argentina,3,6.84
 grocery & gourmet foods,Australia,8,314.6
 grocery & gourmet foods,Brazil,9,178.22
@@ -202,7 +198,6 @@ grocery & gourmet foods,Ukraine,18,40.32
 grocery & gourmet foods,United States,220,5645.88
 grocery & gourmet foods,Uzbekistan,13,502.38
 grocery & gourmet foods,Zimbabwe,8,18.24
-grocery & gourmet foods,country,1,4.66
 home & kitchen,Australia,8,46.08
 home & kitchen,Bhutan,7,251.38
 home & kitchen,Brazil,29,558.86
@@ -237,7 +232,6 @@ home & kitchen,Ukraine,13,77.81
 home & kitchen,United States,425,7273.41
 home & kitchen,Uzbekistan,9,270.0
 home & kitchen,Zimbabwe,19,85.12
-home & kitchen,country,14,97.62
 industrial supplies,Argentina,19,224.85
 industrial supplies,Australia,7,81.34
 industrial supplies,Brazil,7,130.32
@@ -267,7 +261,6 @@ industrial supplies,Turkey,13,229.4
 industrial supplies,Ukraine,3,34.86
 industrial supplies,United States,312,5068.5
 industrial supplies,Zimbabwe,18,254.62
-industrial supplies,country,5,100.8
 kids' fashion,Argentina,13,95.75
 kids' fashion,Australia,20,2159.44
 kids' fashion,Bhutan,15,426.71
@@ -303,7 +296,6 @@ kids' fashion,Ukraine,8,91.16
 kids' fashion,United States,807,19125.14
 kids' fashion,Uzbekistan,9,107.79
 kids' fashion,Zimbabwe,36,1673.54
-kids' fashion,country,9,114.45
 men's clothing,Argentina,99,2485.14
 men's clothing,Australia,81,2590.1
 men's clothing,Bhutan,51,1318.58
@@ -340,7 +332,6 @@ men's clothing,Ukraine,149,3763.2
 men's clothing,United States,4557,113962.05
 men's clothing,Uzbekistan,70,1861.84
 men's clothing,Zimbabwe,145,3447.62
-men's clothing,country,85,1925.56
 men's shoes,Argentina,58,1117.05
 men's shoes,Australia,88,2816.7
 men's shoes,Bhutan,82,2502.86
@@ -377,7 +368,6 @@ men's shoes,Ukraine,184,6639.95
 men's shoes,United States,3931,154280.64
 men's shoes,Uzbekistan,109,3572.12
 men's shoes,Zimbabwe,213,7248.41
-men's shoes,country,99,3761.27
 music,Australia,1,8.39
 music,Bhutan,9,1812.42
 music,Brazil,9,83.91
@@ -447,7 +437,6 @@ sports & fitness,Ukraine,50,1207.18
 sports & fitness,United States,836,30282.98
 sports & fitness,Uzbekistan,8,218.35
 sports & fitness,Zimbabwe,23,4985.94
-sports & fitness,country,16,251.84
 stores,Argentina,21,1398.05
 stores,Australia,37,1342.71
 stores,Bhutan,64,1207.46
@@ -484,7 +473,6 @@ stores,Ukraine,95,9675.0
 stores,United States,1822,105438.89
 stores,Uzbekistan,48,3790.0
 stores,Zimbabwe,103,6128.85
-stores,country,62,1481.55
 toys & baby products,Argentina,12,103.68
 toys & baby products,Australia,14,430.46
 toys & baby products,Bhutan,18,98.34
@@ -520,7 +508,6 @@ toys & baby products,Ukraine,19,422.99
 toys & baby products,United States,508,5863.68
 toys & baby products,Uzbekistan,14,85.15
 toys & baby products,Zimbabwe,24,124.68
-toys & baby products,country,4,19.2
 "tv, audio & cameras",Argentina,80,2180.58
 "tv, audio & cameras",Australia,107,6240.18
 "tv, audio & cameras",Bhutan,107,8324.01
@@ -557,7 +544,6 @@ toys & baby products,country,4,19.2
 "tv, audio & cameras",United States,3338,217027.44
 "tv, audio & cameras",Uzbekistan,81,2591.28
 "tv, audio & cameras",Zimbabwe,174,12864.45
-"tv, audio & cameras",country,60,3882.05
 women's clothing,Argentina,131,2586.57
 women's clothing,Australia,82,1714.11
 women's clothing,Bhutan,62,1019.93
@@ -594,7 +580,6 @@ women's clothing,Ukraine,164,4177.2
 women's clothing,United States,4540,95867.56
 women's clothing,Uzbekistan,125,2992.73
 women's clothing,Zimbabwe,196,4863.51
-women's clothing,country,38,665.89
 women's shoes,Argentina,3,35.97
 women's shoes,Australia,5,67.1
 women's shoes,Brazil,5,59.95
@@ -623,4 +608,3 @@ women's shoes,Sri Lanka,6,64.41
 women's shoes,Ukraine,10,1511.6
 women's shoes,United States,218,7462.16
 women's shoes,Zimbabwe,14,954.88
-women's shoes,country,5,29.95
