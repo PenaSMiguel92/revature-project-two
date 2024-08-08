@@ -3,14 +3,18 @@ import load_csv
 import pandas
 from pyspark.sql import DataFrame,Window,functions as f
 from pathlib import Path
+import sparkContext
 
+spark = sparkContext.spark
 df = load_csv.load("data/clean_data.csv")
 
-df: DataFrame = df.drop('order_id', 'customer_id', 'customer_name','product_id',
+df: DataFrame = df\
+        .drop('order_id', 'customer_id', 'customer_name','product_id',
         'product_name','payment_type', 'datetime', 'city', 'ecommerce_website_name',  
         'payment_txn_id','payment_txn_success')
 
-df = df.withColumn("total_sales",f.round(f.col("qty") * f.col("price"),2))
+df = df\
+        .withColumn("total_sales",f.round(f.col("qty") * f.col("price"),2))
 
 df = df.groupBy("product_category", "country")\
         .agg(f.round(f.sum("qty"),0).cast("integer")\
@@ -43,6 +47,21 @@ category_df = df.groupBy("product_category")\
         
 category_df = category_df.orderBy(["product_category"])
 
+top5_category_df = spark\
+        .createDataFrame(category_df.orderBy([f.desc("total_sales")])\
+        .drop("unit_sold", "total_sales")\
+        .take(5))
+
+country_df = df\
+        .groupBy("Country")\
+        .agg(f.round(f.sum("total_sales"),2)\
+        .alias("total_sales"))
+
+top5_country_df = spark\
+        .createDataFrame(country_df.orderBy([f.desc("total_sales")])\
+        .drop("total_sales")\
+        .take(5))
+
 # Add file
 category_by_country_path = Path(__file__).parent / "data/oluwatobi/category_by_country.csv"
 df.toPandas().to_csv(str(category_by_country_path), index=False)
@@ -55,6 +74,12 @@ county_max_total_sale_df.toPandas().to_csv(str(county_max_total_sale_path), inde
 
 county_max_unit_sold_path = Path(__file__).parent / "data/oluwatobi/county_max_unit_sold.csv"
 county_max_unit_sold_df.toPandas().to_csv(str(county_max_unit_sold_path), index=False)
+
+top5_county_path = Path(__file__).parent / "data/oluwatobi/top5_country.csv"
+top5_country_df.toPandas().to_csv(str(top5_county_path), index=False)
+
+top5_category_path = Path(__file__).parent / "data/oluwatobi/top5_category.csv"
+top5_category_df.toPandas().to_csv(str(top5_category_path), index=False)
 
 """For jupyter
 path = os.path.abspath('') + "/category_by_country"
