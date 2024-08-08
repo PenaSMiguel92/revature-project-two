@@ -1,0 +1,1161 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='website_by_quarter' inline='true' name='federated.1rdl0dn0s7uume115tdbi1kc1iai' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='website_by_quarter' name='textscan.1wf4mrw079v3ab1bhm3k805mpurl'>
+            <connection class='textscan' directory='/Users/matthewbernhardt/Desktop/Revature_Project_2/data_analysis_and_cleaner/data/matt' filename='website_by_quarter.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='country_by_year_and_quarter' name='textscan.1wam0vt104j7lb10dadk21ynqm4w'>
+            <connection class='textscan' directory='/Users/matthewbernhardt/Desktop/Revature_Project_2/data_analysis_and_cleaner/data/matt' filename='country_by_year_and_quarter.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1wf4mrw079v3ab1bhm3k805mpurl' name='website_by_quarter.csv' table='[website_by_quarter#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='ecommerce_website_name' ordinal='0' />
+            <column datatype='real' name='Q1' ordinal='1' />
+            <column datatype='real' name='Q2' ordinal='2' />
+            <column datatype='real' name='Q3' ordinal='3' />
+            <column datatype='real' name='Q4' ordinal='4' />
+            <column datatype='real' name='total_sales' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1wf4mrw079v3ab1bhm3k805mpurl' name='website_by_quarter.csv' table='[website_by_quarter#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='ecommerce_website_name' ordinal='0' />
+            <column datatype='real' name='Q1' ordinal='1' />
+            <column datatype='real' name='Q2' ordinal='2' />
+            <column datatype='real' name='Q3' ordinal='3' />
+            <column datatype='real' name='Q4' ordinal='4' />
+            <column datatype='real' name='total_sales' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[website_by_quarter.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ecommerce_website_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ecommerce_website_name]</local-name>
+            <parent-name>[website_by_quarter.csv]</parent-name>
+            <remote-alias>ecommerce_website_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[website_by_quarter.csv_8B9F13AC442B4DC09183AAE387B9A700]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Q1]</local-name>
+            <parent-name>[website_by_quarter.csv]</parent-name>
+            <remote-alias>Q1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[website_by_quarter.csv_8B9F13AC442B4DC09183AAE387B9A700]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Q2]</local-name>
+            <parent-name>[website_by_quarter.csv]</parent-name>
+            <remote-alias>Q2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[website_by_quarter.csv_8B9F13AC442B4DC09183AAE387B9A700]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Q3]</local-name>
+            <parent-name>[website_by_quarter.csv]</parent-name>
+            <remote-alias>Q3</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[website_by_quarter.csv_8B9F13AC442B4DC09183AAE387B9A700]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Q4]</local-name>
+            <parent-name>[website_by_quarter.csv]</parent-name>
+            <remote-alias>Q4</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[website_by_quarter.csv_8B9F13AC442B4DC09183AAE387B9A700]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_sales]</local-name>
+            <parent-name>[website_by_quarter.csv]</parent-name>
+            <remote-alias>total_sales</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[website_by_quarter.csv_8B9F13AC442B4DC09183AAE387B9A700]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='real' name='[Calculation_5258515563184984064]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([total_sales]) / TOTAL(SUM([total_sales]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='website_by_quarter.csv' datatype='table' name='[__tableau_internal_object_id__].[website_by_quarter.csv_8B9F13AC442B4DC09183AAE387B9A700]' role='measure' type='quantitative' />
+      <column caption='Ecommerce Website Name' datatype='string' name='[ecommerce_website_name]' role='dimension' type='nominal' />
+      <column caption='Total Sales' datatype='real' name='[total_sales]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='website_by_quarter.csv' id='website_by_quarter.csv_8B9F13AC442B4DC09183AAE387B9A700'>
+            <properties context=''>
+              <relation connection='textscan.1wf4mrw079v3ab1bhm3k805mpurl' name='website_by_quarter.csv' table='[website_by_quarter#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='ecommerce_website_name' ordinal='0' />
+                  <column datatype='real' name='Q1' ordinal='1' />
+                  <column datatype='real' name='Q2' ordinal='2' />
+                  <column datatype='real' name='Q3' ordinal='3' />
+                  <column datatype='real' name='Q4' ordinal='4' />
+                  <column datatype='real' name='total_sales' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='country_by_year_and_quarter' inline='true' name='federated.10ztmk71ank3zc1a6qu6e0ew8rpy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='country_by_year_and_quarter' name='textscan.0vmkxv912s7hwm18a1mnb0ynwbvi'>
+            <connection class='textscan' directory='/Users/matthewbernhardt/Desktop/Revature_Project_2/data_analysis_and_cleaner/data/matt' filename='country_by_year_and_quarter.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy QQQ' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2022 Q1]' />
+            <value name='[2022 Q2]' />
+            <value name='[2022 Q3]' />
+            <value name='[2022 Q4]' />
+            <value name='[2023 Q1]' />
+            <value name='[2023 Q2]' />
+            <value name='[2023 Q3]' />
+            <value name='[2023 Q4]' />
+            <value name='[2024 Q1]' />
+            <value name='[2024 Q2]' />
+            <value name='[2024 Q3]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[country_by_year_and_quarter.csv].[2022 Q1]' />
+              <field name='[country_by_year_and_quarter.csv].[2022 Q2]' />
+              <field name='[country_by_year_and_quarter.csv].[2022 Q3]' />
+              <field name='[country_by_year_and_quarter.csv].[2022 Q4]' />
+              <field name='[country_by_year_and_quarter.csv].[2023 Q1]' />
+              <field name='[country_by_year_and_quarter.csv].[2023 Q2]' />
+              <field name='[country_by_year_and_quarter.csv].[2023 Q3]' />
+              <field name='[country_by_year_and_quarter.csv].[2023 Q4]' />
+              <field name='[country_by_year_and_quarter.csv].[2024 Q1]' />
+              <field name='[country_by_year_and_quarter.csv].[2024 Q2]' />
+              <field name='[country_by_year_and_quarter.csv].[2024 Q3]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0vmkxv912s7hwm18a1mnb0ynwbvi' name='country_by_year_and_quarter.csv' table='[country_by_year_and_quarter#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='country' ordinal='0' />
+              <column datatype='real' name='2022 Q1' ordinal='1' />
+              <column datatype='real' name='2022 Q2' ordinal='2' />
+              <column datatype='real' name='2022 Q3' ordinal='3' />
+              <column datatype='real' name='2022 Q4' ordinal='4' />
+              <column datatype='real' name='2023 Q1' ordinal='5' />
+              <column datatype='real' name='2023 Q2' ordinal='6' />
+              <column datatype='real' name='2023 Q3' ordinal='7' />
+              <column datatype='real' name='2023 Q4' ordinal='8' />
+              <column datatype='real' name='2024 Q1' ordinal='9' />
+              <column datatype='real' name='2024 Q2' ordinal='10' />
+              <column datatype='real' name='2024 Q3' ordinal='11' />
+              <column datatype='real' name='country_total_revenue' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy QQQ' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2022 Q1]' />
+            <value name='[2022 Q2]' />
+            <value name='[2022 Q3]' />
+            <value name='[2022 Q4]' />
+            <value name='[2023 Q1]' />
+            <value name='[2023 Q2]' />
+            <value name='[2023 Q3]' />
+            <value name='[2023 Q4]' />
+            <value name='[2024 Q1]' />
+            <value name='[2024 Q2]' />
+            <value name='[2024 Q3]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[country_by_year_and_quarter.csv].[2022 Q1]' />
+              <field name='[country_by_year_and_quarter.csv].[2022 Q2]' />
+              <field name='[country_by_year_and_quarter.csv].[2022 Q3]' />
+              <field name='[country_by_year_and_quarter.csv].[2022 Q4]' />
+              <field name='[country_by_year_and_quarter.csv].[2023 Q1]' />
+              <field name='[country_by_year_and_quarter.csv].[2023 Q2]' />
+              <field name='[country_by_year_and_quarter.csv].[2023 Q3]' />
+              <field name='[country_by_year_and_quarter.csv].[2023 Q4]' />
+              <field name='[country_by_year_and_quarter.csv].[2024 Q1]' />
+              <field name='[country_by_year_and_quarter.csv].[2024 Q2]' />
+              <field name='[country_by_year_and_quarter.csv].[2024 Q3]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0vmkxv912s7hwm18a1mnb0ynwbvi' name='country_by_year_and_quarter.csv' table='[country_by_year_and_quarter#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='country' ordinal='0' />
+              <column datatype='real' name='2022 Q1' ordinal='1' />
+              <column datatype='real' name='2022 Q2' ordinal='2' />
+              <column datatype='real' name='2022 Q3' ordinal='3' />
+              <column datatype='real' name='2022 Q4' ordinal='4' />
+              <column datatype='real' name='2023 Q1' ordinal='5' />
+              <column datatype='real' name='2023 Q2' ordinal='6' />
+              <column datatype='real' name='2023 Q3' ordinal='7' />
+              <column datatype='real' name='2023 Q4' ordinal='8' />
+              <column datatype='real' name='2024 Q1' ordinal='9' />
+              <column datatype='real' name='2024 Q2' ordinal='10' />
+              <column datatype='real' name='2024 Q3' ordinal='11' />
+              <column datatype='real' name='country_total_revenue' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[country_by_year_and_quarter.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[country_by_year_and_quarter.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_year_and_quarter.csv_E5AA71FF18F844DD839A27490314F9FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_total_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[country_total_revenue]</local-name>
+            <parent-name>[country_by_year_and_quarter.csv]</parent-name>
+            <remote-alias>country_total_revenue</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_year_and_quarter.csv_E5AA71FF18F844DD839A27490314F9FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_year_and_quarter.csv_E5AA71FF18F844DD839A27490314F9FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_year_and_quarter.csv_E5AA71FF18F844DD839A27490314F9FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='real' name='[Calculation_5258515563240042498]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Pivot Field Values])' />
+      </column>
+      <column caption='Year' datatype='integer' name='[Calculation_5258515563242643459]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='YEAR([Pivot Field Names])' />
+      </column>
+      <column caption='Year-Quarter' datatype='real' name='[Calculation_5258515563243106308]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='STR(YEAR([Date])) + &quot; Q&quot; + LEFT([Pivot Field Names], 1)' />
+      </column>
+      <column caption='Quarter' datatype='date' name='[Pivot Field Names]' role='dimension' type='ordinal' />
+      <column caption='Revenue' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='country_by_year_and_quarter.csv' datatype='table' name='[__tableau_internal_object_id__].[country_by_year_and_quarter.csv_E5AA71FF18F844DD839A27490314F9FE]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Total Revenue' datatype='real' name='[country_total_revenue]' role='measure' type='quantitative' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='36' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:country:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='country_by_year_and_quarter.csv' id='country_by_year_and_quarter.csv_E5AA71FF18F844DD839A27490314F9FE'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy QQQ' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[2022 Q1]' />
+                  <value name='[2022 Q2]' />
+                  <value name='[2022 Q3]' />
+                  <value name='[2022 Q4]' />
+                  <value name='[2023 Q1]' />
+                  <value name='[2023 Q2]' />
+                  <value name='[2023 Q3]' />
+                  <value name='[2023 Q4]' />
+                  <value name='[2024 Q1]' />
+                  <value name='[2024 Q2]' />
+                  <value name='[2024 Q3]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[country_by_year_and_quarter.csv].[2022 Q1]' />
+                    <field name='[country_by_year_and_quarter.csv].[2022 Q2]' />
+                    <field name='[country_by_year_and_quarter.csv].[2022 Q3]' />
+                    <field name='[country_by_year_and_quarter.csv].[2022 Q4]' />
+                    <field name='[country_by_year_and_quarter.csv].[2023 Q1]' />
+                    <field name='[country_by_year_and_quarter.csv].[2023 Q2]' />
+                    <field name='[country_by_year_and_quarter.csv].[2023 Q3]' />
+                    <field name='[country_by_year_and_quarter.csv].[2023 Q4]' />
+                    <field name='[country_by_year_and_quarter.csv].[2024 Q1]' />
+                    <field name='[country_by_year_and_quarter.csv].[2024 Q2]' />
+                    <field name='[country_by_year_and_quarter.csv].[2024 Q3]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0vmkxv912s7hwm18a1mnb0ynwbvi' name='country_by_year_and_quarter.csv' table='[country_by_year_and_quarter#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='country' ordinal='0' />
+                    <column datatype='real' name='2022 Q1' ordinal='1' />
+                    <column datatype='real' name='2022 Q2' ordinal='2' />
+                    <column datatype='real' name='2022 Q3' ordinal='3' />
+                    <column datatype='real' name='2022 Q4' ordinal='4' />
+                    <column datatype='real' name='2023 Q1' ordinal='5' />
+                    <column datatype='real' name='2023 Q2' ordinal='6' />
+                    <column datatype='real' name='2023 Q3' ordinal='7' />
+                    <column datatype='real' name='2023 Q4' ordinal='8' />
+                    <column datatype='real' name='2024 Q1' ordinal='9' />
+                    <column datatype='real' name='2024 Q2' ordinal='10' />
+                    <column datatype='real' name='2024 Q3' ordinal='11' />
+                    <column datatype='real' name='country_total_revenue' ordinal='12' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='country_by_quarter' inline='true' name='federated.102r4w30k398nb18rm3ab1fas3k5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='country_by_quarter' name='textscan.04b5q7s122x7v11fnrh8z039f4kv'>
+            <connection class='textscan' directory='/Users/matthewbernhardt/Desktop/Revature_Project_2/data_analysis_and_cleaner/data/matt' filename='country_by_quarter.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.04b5q7s122x7v11fnrh8z039f4kv' name='country_by_quarter.csv' table='[country_by_quarter#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='real' name='Q1' ordinal='1' />
+            <column datatype='real' name='Q2' ordinal='2' />
+            <column datatype='real' name='Q3' ordinal='3' />
+            <column datatype='real' name='Q4' ordinal='4' />
+            <column datatype='real' name='country_total_revenue' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.04b5q7s122x7v11fnrh8z039f4kv' name='country_by_quarter.csv' table='[country_by_quarter#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='real' name='Q1' ordinal='1' />
+            <column datatype='real' name='Q2' ordinal='2' />
+            <column datatype='real' name='Q3' ordinal='3' />
+            <column datatype='real' name='Q4' ordinal='4' />
+            <column datatype='real' name='country_total_revenue' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[country_by_quarter.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[country_by_quarter.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_quarter.csv_C38AA535392D430AB34DB00206BA2939]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Q1]</local-name>
+            <parent-name>[country_by_quarter.csv]</parent-name>
+            <remote-alias>Q1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_quarter.csv_C38AA535392D430AB34DB00206BA2939]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Q2]</local-name>
+            <parent-name>[country_by_quarter.csv]</parent-name>
+            <remote-alias>Q2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_quarter.csv_C38AA535392D430AB34DB00206BA2939]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Q3]</local-name>
+            <parent-name>[country_by_quarter.csv]</parent-name>
+            <remote-alias>Q3</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_quarter.csv_C38AA535392D430AB34DB00206BA2939]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Q4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Q4]</local-name>
+            <parent-name>[country_by_quarter.csv]</parent-name>
+            <remote-alias>Q4</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_quarter.csv_C38AA535392D430AB34DB00206BA2939]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_total_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[country_total_revenue]</local-name>
+            <parent-name>[country_by_quarter.csv]</parent-name>
+            <remote-alias>country_total_revenue</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_by_quarter.csv_C38AA535392D430AB34DB00206BA2939]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='real' name='[Calculation_5258515563191513089]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([country_total_revenue]) / TOTAL(SUM([country_total_revenue]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='First Half' datatype='real' name='[Calculation_5407345457442668544]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Q1] + [Q2])' />
+      </column>
+      <column caption='Second Half' datatype='real' name='[Calculation_5407345457443016705]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='Sum([Q3] + [Q4])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='country_by_quarter.csv' datatype='table' name='[__tableau_internal_object_id__].[country_by_quarter.csv_C38AA535392D430AB34DB00206BA2939]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Total' datatype='real' name='[country_total_revenue]' role='measure' type='quantitative' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;South Georgia And South Sandwich Islands&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='country_by_quarter.csv' id='country_by_quarter.csv_C38AA535392D430AB34DB00206BA2939'>
+            <properties context=''>
+              <relation connection='textscan.04b5q7s122x7v11fnrh8z039f4kv' name='country_by_quarter.csv' table='[country_by_quarter#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='real' name='Q1' ordinal='1' />
+                  <column datatype='real' name='Q2' ordinal='2' />
+                  <column datatype='real' name='Q3' ordinal='3' />
+                  <column datatype='real' name='Q4' ordinal='4' />
+                  <column datatype='real' name='country_total_revenue' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Country_By_Quarter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_by_quarter' name='federated.102r4w30k398nb18rm3ab1fas3k5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.102r4w30k398nb18rm3ab1fas3k5'>
+            <column caption='First Half' datatype='real' name='[Calculation_5407345457442668544]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Q1] + [Q2])' />
+            </column>
+            <column datatype='real' name='[Q1]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Q2]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Q3]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Q4]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Total' datatype='real' name='[country_total_revenue]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Q1]' derivation='Sum' name='[sum:Q1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q2]' derivation='Sum' name='[sum:Q2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q3]' derivation='Sum' name='[sum:Q3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Q4]' derivation='Sum' name='[sum:Q4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country_total_revenue]' derivation='Sum' name='[sum:country_total_revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5407345457442668544]' derivation='User' name='[usr:Calculation_5407345457442668544:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.102r4w30k398nb18rm3ab1fas3k5].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:Q1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:Q2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[usr:Calculation_5407345457442668544:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:Q3:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:Q4:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:country_total_revenue:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.102r4w30k398nb18rm3ab1fas3k5].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:Q1:qk]&quot;</bucket>
+              <bucket>&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:Q2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[usr:Calculation_5407345457442668544:qk]&quot;</bucket>
+              <bucket>&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:Q3:qk]&quot;</bucket>
+              <bucket>&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:Q4:qk]&quot;</bucket>
+              <bucket>&quot;[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:country_total_revenue:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.102r4w30k398nb18rm3ab1fas3k5].[none:country:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([country_total_revenue])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.102r4w30k398nb18rm3ab1fas3k5].[none:country:nk]' direction='DESC' using='[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:country_total_revenue:qk]' />
+          <slices>
+            <column>[federated.102r4w30k398nb18rm3ab1fas3k5].[none:country:nk]</column>
+            <column>[federated.102r4w30k398nb18rm3ab1fas3k5].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.102r4w30k398nb18rm3ab1fas3k5].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.102r4w30k398nb18rm3ab1fas3k5].[none:country:nk]</rows>
+        <cols>[federated.102r4w30k398nb18rm3ab1fas3k5].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{D95C0A86-DDBF-4398-95ED-B4706C60DFC0}' />
+    </worksheet>
+    <worksheet name='Revenue_By_Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Total Revenue By Country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_by_quarter' name='federated.102r4w30k398nb18rm3ab1fas3k5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.102r4w30k398nb18rm3ab1fas3k5'>
+            <column caption='Calculation1' datatype='real' name='[Calculation_5258515563191513089]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([country_total_revenue]) / TOTAL(SUM([country_total_revenue]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Total' datatype='real' name='[country_total_revenue]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country_total_revenue]' derivation='Sum' name='[sum:country_total_revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5258515563191513089]' derivation='User' name='[usr:Calculation_5258515563191513089:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.102r4w30k398nb18rm3ab1fas3k5].[none:country:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([country_total_revenue])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.102r4w30k398nb18rm3ab1fas3k5].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.102r4w30k398nb18rm3ab1fas3k5].[usr:Calculation_5258515563191513089:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.102r4w30k398nb18rm3ab1fas3k5].[none:country:nk]' />
+              <size column='[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:country_total_revenue:qk]' />
+              <text column='[federated.102r4w30k398nb18rm3ab1fas3k5].[none:country:nk]' />
+              <text column='[federated.102r4w30k398nb18rm3ab1fas3k5].[usr:Calculation_5258515563191513089:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#4e79a7' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{079EFDB7-08FA-45E7-9BE3-51E38A8B80A4}' />
+    </worksheet>
+    <worksheet name='Revenue_By_Website'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Revenue By Website</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='website_by_quarter' name='federated.1rdl0dn0s7uume115tdbi1kc1iai' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rdl0dn0s7uume115tdbi1kc1iai'>
+            <column caption='Calculation1' datatype='real' name='[Calculation_5258515563184984064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([total_sales]) / TOTAL(SUM([total_sales]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Ecommerce Website Name' datatype='string' name='[ecommerce_website_name]' role='dimension' type='nominal' />
+            <column-instance column='[ecommerce_website_name]' derivation='None' name='[none:ecommerce_website_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_sales]' derivation='Sum' name='[sum:total_sales:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Sales' datatype='real' name='[total_sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_5258515563184984064]' derivation='User' name='[usr:Calculation_5258515563184984064:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1rdl0dn0s7uume115tdbi1kc1iai].[usr:Calculation_5258515563184984064:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1rdl0dn0s7uume115tdbi1kc1iai].[none:ecommerce_website_name:nk]' />
+              <wedge-size column='[federated.1rdl0dn0s7uume115tdbi1kc1iai].[sum:total_sales:qk]' />
+              <size column='[federated.1rdl0dn0s7uume115tdbi1kc1iai].[sum:total_sales:qk]' />
+              <text column='[federated.1rdl0dn0s7uume115tdbi1kc1iai].[none:ecommerce_website_name:nk]' />
+              <text column='[federated.1rdl0dn0s7uume115tdbi1kc1iai].[usr:Calculation_5258515563184984064:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{92666238-012D-42DC-AAE4-FFFA33EB5597}' />
+    </worksheet>
+    <worksheet name='Sheet 4 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Top 4 Countries - Quarter-By-Quarter</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_by_year_and_quarter' name='federated.10ztmk71ank3zc1a6qu6e0ew8rpy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10ztmk71ank3zc1a6qu6e0ew8rpy'>
+            <column caption='Quarter' datatype='date' name='[Pivot Field Names]' role='dimension' type='ordinal' />
+            <column caption='Revenue' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Total Revenue' datatype='real' name='[country_total_revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10ztmk71ank3zc1a6qu6e0ew8rpy].[none:country:nk]'>
+            <groupfilter count='4' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([country_total_revenue])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <natural-sort column='[federated.10ztmk71ank3zc1a6qu6e0ew8rpy].[none:country:nk]' direction='DESC' />
+          <slices>
+            <column>[federated.10ztmk71ank3zc1a6qu6e0ew8rpy].[none:country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#4e79a7' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.10ztmk71ank3zc1a6qu6e0ew8rpy].[none:country:nk]' value='#4e79a7' />
+            <format attr='font-weight' field='[federated.10ztmk71ank3zc1a6qu6e0ew8rpy].[none:country:nk]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.10ztmk71ank3zc1a6qu6e0ew8rpy].[none:country:nk] * [federated.10ztmk71ank3zc1a6qu6e0ew8rpy].[sum:Pivot Field Values:qk])</rows>
+        <cols>[federated.10ztmk71ank3zc1a6qu6e0ew8rpy].[none:Pivot Field Names:ok]</cols>
+      </table>
+      <simple-id uuid='{C62936A3-8E83-485A-85A2-E66779C8D5AE}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' name='Revenue_By_Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.102r4w30k398nb18rm3ab1fas3k5].[sum:country_total_revenue:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.102r4w30k398nb18rm3ab1fas3k5].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4A7B55DD-6288-4E7C-88FD-59F59B019325}' />
+    </window>
+    <window class='worksheet' name='Revenue_By_Website'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rdl0dn0s7uume115tdbi1kc1iai].[sum:total_sales:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1rdl0dn0s7uume115tdbi1kc1iai].[none:ecommerce_website_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{51CE3AAA-9BF3-4650-8187-2E3684D5C081}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Country_By_Quarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FE8753E5-13CE-483D-8332-6E336D75BCE2}' />
+    </window>
+    <window class='worksheet' name='Sheet 4 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A5D6ACE9-1D1D-4C77-B90A-3A578E9C0712}' />
+    </window>
+  </windows>
+</workbook>
