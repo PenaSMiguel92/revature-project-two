@@ -2,7 +2,7 @@ import load_csv
 import pandas
 from pathlib import Path
 from pyspark.sql.functions import col, countDistinct
-
+from pyspark.sql import Row
 # Load Data as a DataFrame
 df = load_csv.load("data/data_team_3.csv")
 
@@ -24,6 +24,20 @@ for column in columns_to_check[1:]:
 
 # Drop rows where 'country' is 'country'
 df = df.filter(col("country") != 'country')
+
+
+
+def shorten_names(row):
+    row_dict: dict = row.asDict()
+    cur_name = row_dict['product_name']
+    if len(cur_name) > 30:
+        word_list = cur_name.split(' ')
+        name = ' '.join([word.title() for word in word_list if word.isalpha()][:3])
+        row_dict.update({'product_name': name[:30]})
+    
+    return Row(**row_dict)
+
+df = df.rdd.map(shorten_names).toDF()
 
 def unique_values_count(df):
     unique_counts = {}
