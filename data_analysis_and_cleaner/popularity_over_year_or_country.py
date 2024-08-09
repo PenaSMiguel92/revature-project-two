@@ -22,7 +22,15 @@ def get_popularity_over_year(context):
 
     pop_year_df = context.sql(query_popularity_over_year)
     pop_year_df = pop_year_df.na.fill(0)
-    pop_year_df.show(1000)
+
+    #query total popularity of each product over the year:
+    query_total_popularity = f'SELECT product_id, product_name, SUM(qty) AS total_popularity FROM orders GROUP BY product_id, product_name'
+    tot_pop_year_df = context.sql(query_total_popularity)
+    #get top 10 most popular products:
+    pop_year_df = pop_year_df.join(tot_pop_year_df,['product_id', 'product_name']).sort('total_popularity', ascending=False).limit(10)
+    # pop_year_df.show()
+
+    # pop_year_df.show(1000)
     return pop_year_df
 
 def get_popularity_over_country(context):
@@ -43,7 +51,14 @@ def get_popularity_over_country(context):
 
     pop_country_df = context.sql(query_popularity_over_country)
     pop_country_df = pop_country_df.na.fill(0)
-    pop_country_df.show(1000)
+
+    query_total_popularity = f'SELECT product_id, product_name, SUM(qty) AS total_popularity FROM orders GROUP BY product_id, product_name'
+    tot_pop_df = context.sql(query_total_popularity)
+    #get top 10 most popular products:
+    pop_country_df = pop_country_df.join(tot_pop_df,['product_id', 'product_name']).sort('total_popularity', ascending=False).limit(10)
+    # pop_country_df.show()
+
+    # pop_country_df.show(1000)
     return pop_country_df
 
 def main():
