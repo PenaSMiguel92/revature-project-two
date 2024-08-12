@@ -34,31 +34,45 @@ def get_popularity_over_year(context):
     return pop_year_df
 
 def get_popularity_over_country(context):
-    query_unique_countries = f'SELECT DISTINCT country FROM orders ORDER BY country'
-    countries_df = context.sql(query_unique_countries)
-    country_list = countries_df.collect()
-    country_list = [row['country'] for row in country_list]
+    #get top 5 most popular products in each country with the total popularity of each product:
+    query_top_products = '''
+    SELECT country, product_id, product_name, SUM(qty) AS popularity
+    FROM orders
+    GROUP BY country, product_id, product_name
+    ORDER BY country, popularity DESC
+    '''
+    pop_countries_df = context.sql(query_top_products)
+    pop_countries_df.createOrReplaceTempView('pop_countries')
+    query_top_products_per_country = '''
+    SELECT country, product_id, product_name, popularity
+    FROM (
+        SELECT country, product_id, product_name, popularity,
+               ROW_NUMBER() OVER (PARTITION BY country ORDER BY popularity DESC) AS rank
+        FROM pop_countries
+    ) tmp
+    WHERE rank <= 5
+    '''
 
-    query_pivot = '('
-    for index, country in enumerate(country_list):
-        if index == len(country_list) - 1:
-            query_pivot += f'\'{country}\')'
-        else:
-            query_pivot += f'\'{country}\', '
+    top_products_per_country_df = context.sql(query_top_products_per_country)
+    # top_products_per_country_df.show()
+    
+    query_top_selling_countries = '''
+    SELECT country, SUM(qty) AS total_popularity 
+    FROM orders 
+    GROUP BY country 
+    ORDER BY total_popularity DESC 
+    LIMIT 5
+    '''
 
-    query_popularity_over_country_subquery = f'SELECT country, product_name, qty FROM orders'
-    query_popularity_over_country = f'SELECT * FROM ({query_popularity_over_country_subquery}) PIVOT (SUM(qty) AS popularity FOR country IN {query_pivot})'
+    pop_countries_df = context.sql(query_top_selling_countries)
+    # pop_countries_df.show()
 
-    pop_country_df = context.sql(query_popularity_over_country)
-    pop_country_df = pop_country_df.na.fill(0)
+    top_selling_countries = pop_countries_df.select('country').collect()
+    top_selling_countries = [row['country'] for row in top_selling_countries]
 
-    query_total_popularity = f'SELECT product_id, product_name, SUM(qty) AS total_popularity FROM orders GROUP BY product_id, product_name'
-    tot_pop_df = context.sql(query_total_popularity)
-    #get top 10 most popular products:
-    pop_country_df = pop_country_df.join(tot_pop_df,['product_id', 'product_name']).sort('total_popularity', ascending=False).limit(10)
-    # pop_country_df.show()
+    pop_country_df = top_products_per_country_df.filter(top_products_per_country_df['country'].isin(top_selling_countries)).sort('country')
+    # pop_country_df.show(100)
 
-    # pop_country_df.show(1000)
     return pop_country_df
 
 def main():
