@@ -34,44 +34,20 @@ def get_popularity_over_year(context):
     return pop_year_df
 
 def get_popularity_over_country(context):
-    #get top 5 most popular products in each country with the total popularity of each product:
-    query_top_products = '''
-    SELECT country, product_id, product_name, SUM(qty) AS popularity
-    FROM orders
-    GROUP BY country, product_id, product_name
-    ORDER BY country, popularity DESC
+    # Query to get the countries where the top 5 products are sold the most
+    query_popularity_over_country = '''
+        SELECT country, product_id, product_name, SUM(qty) AS popularity
+        FROM orders
+        WHERE product_id IN (
+            SELECT product_id
+            FROM pop_year_df
+            ORDER BY total_popularity DESC
+            LIMIT 5
+        )
+        GROUP BY country, product_id, product_name
+        ORDER BY product_id, popularity DESC
     '''
-    pop_countries_df = context.sql(query_top_products)
-    pop_countries_df.createOrReplaceTempView('pop_countries')
-    query_top_products_per_country = '''
-    SELECT country, product_id, product_name, popularity
-    FROM (
-        SELECT country, product_id, product_name, popularity,
-               ROW_NUMBER() OVER (PARTITION BY country ORDER BY popularity DESC) AS rank
-        FROM pop_countries
-    ) tmp
-    WHERE rank <= 5
-    '''
-
-    top_products_per_country_df = context.sql(query_top_products_per_country)
-    # top_products_per_country_df.show()
-    
-    query_top_selling_countries = '''
-    SELECT country, SUM(qty) AS total_popularity 
-    FROM orders 
-    GROUP BY country 
-    ORDER BY total_popularity DESC 
-    LIMIT 5
-    '''
-
-    pop_countries_df = context.sql(query_top_selling_countries)
-    # pop_countries_df.show()
-
-    top_selling_countries = pop_countries_df.select('country').collect()
-    top_selling_countries = [row['country'] for row in top_selling_countries]
-
-    pop_country_df = top_products_per_country_df.filter(top_products_per_country_df['country'].isin(top_selling_countries)).sort('country')
-    # pop_country_df.show(100)
+    pop_country_df = context.sql(query_popularity_over_country)
 
     return pop_country_df
 
